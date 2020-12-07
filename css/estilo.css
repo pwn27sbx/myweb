@@ -1,0 +1,157 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Viga', sans-serif;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    height: 100vh;
+    background: url(../img/atardecer.jpg) no-repeat center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-card{
+    width: 400px;
+    text-align: center;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.card-header{
+    background: rgba(59, 75, 98, .9);
+    padding: 60px 40px;
+}
+
+.pic{
+    display: inline-block;
+    padding: 8px;
+    background: linear-gradient(130deg, indianred, gray);
+    margin: auto;
+    border-radius: 50%;
+    background-size: 200% 200%;
+    animation: animated-gradient 2s linear infinite;  
+}
+ 
+@keyframes animated-gradient{
+    25%{
+        background-position: left bottom;
+    }
+    50%{
+        background-position: right bottom;
+    }
+    75%{
+        background-position: right top;
+    }
+    100%{
+        background-position: left top;
+    }
+}
+
+.pic img{
+    display: block;
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+}
+
+.name{
+    color: gray;
+    font-size: 20px;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+.descripcion{
+    font-size: 10px;
+    color: indianred;   
+}
+
+.sm{
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.sm i{
+    color: whitesmoke;
+    width: 56px;
+    font-size: 35px;
+    transition: .3s linear;
+}
+
+.sm i:hover{
+    color: indianred;
+}
+
+.contact-me{
+    display: inline-block;
+    padding: 12px 50px;
+    color: indianred;
+    border: 2px solid indianred;
+    border-radius: 6px;
+    margin-top: 0px;
+}
+
+.contact-me:hover{
+    background: indianred;
+    color: whitesmoke;
+}
+
+.coffee{
+    display: inline-block;
+    padding: 12px 25px;
+    color: indianred;
+    border: 2px solid indianred;
+    border-radius: 6px;
+    margin-top: 16px;
+}
+
+.coffee:hover{
+    background: indianred;
+    color: whitesmoke;
+}
+
+.intro{
+    color: whitesmoke   ;
+}
+
+.boton{
+    overflow: hidden;
+    background: transparent;
+    display: inline-block;
+    border-radius: 6px;
+}
+
+.card-footer{
+    background: whitesmoke;
+    padding: 25px 10px;
+}
+
+.numbers{
+    display: flex;
+    align-items: center;
+}
+
+.item{
+    flex: 1;
+    text-transform: uppercase;
+    font-size: 13px;
+    color: indianred;
+}
+
+.item span{
+    display: block;
+    color: gray;
+    font-size: 30px;
+}
+
+.border{
+    width: 1px;
+    height: 10px;
+    background: #bbb;
+}
